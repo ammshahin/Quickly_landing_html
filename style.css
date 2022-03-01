@@ -12,6 +12,9 @@ header{
     padding: 20px 30px;
 }
 
+.logo{
+    cursor: pointer;
+}
 .nav_items li{
     font-family: Plus_Jakarta_Sans;
     font-style: normal;
@@ -20,6 +23,13 @@ header{
     display: inline-block;
     padding: 0px 15px;
     color: white;
+}
+
+.nav_items li a{
+    transition: all .03s ease 0s;
+}
+.nav_items li a:hover{
+    color: #667292;
 }
 
 .nav_buttons{ 
@@ -32,10 +42,12 @@ header{
 
 .nav_buttons a{
     display: inline-block;
-    padding: 0px 10px;
+    padding: 10px 10px;
 }
 
 .nav_buttons a:hover{
-
+    background: #B8E4DA;
+    border-radius: 8px;
+    color: #20484F;
 }
 
