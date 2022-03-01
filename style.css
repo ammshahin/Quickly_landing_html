@@ -1,0 +1,41 @@
+@font-face {
+    font-family: Plus_Jakarta_Sans;
+    src: url(/fonts/PlusJakartaSans-Regular.ttf);
+}
+
+
+
+header{
+    background-color: #20484F;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+.nav_items li{
+    font-family: Plus_Jakarta_Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    display: inline-block;
+    padding: 0px 15px;
+    color: white;
+}
+
+.nav_buttons{ 
+    font-family: Plus_Jakarta_Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: white;
+}
+
+.nav_buttons a{
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.nav_buttons a:hover{
+
+}
+
