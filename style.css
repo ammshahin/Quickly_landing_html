@@ -3,7 +3,12 @@
     src: url(/fonts/PlusJakartaSans-Regular.ttf);
 }
 
+body{
+    font-family: Plus_Jakarta_Sans;
+    margin: 0;
+}
 
+/* Header part start*/
 
 header{
     background-color: #20484F;
@@ -12,37 +17,51 @@ header{
     padding: 20px 30px;
 }
 
-.logo{
-    cursor: pointer;
+.logo a{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
 }
 .nav_items li{
-    font-family: Plus_Jakarta_Sans;
-    font-style: normal;
-    font-weight: normal;
+    
     font-size: 16px;
     display: inline-block;
     padding: 0px 15px;
-    color: white;
+    
 }
 
 .nav_items li a{
-    transition: all .03s ease 0s;
+    font-family: Plus_Jakarta_Sans;
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+    transition: all .3s ease 0s;
+    text-decoration: none;
 }
 .nav_items li a:hover{
     color: #667292;
 }
 
-.nav_buttons{ 
+/* .nav_buttons{ 
     font-family: Plus_Jakarta_Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     color: white;
-}
+} */
 
 .nav_buttons a{
+    font-family: Plus_Jakarta_Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
     display: inline-block;
     padding: 10px 10px;
+    
 }
 
 .nav_buttons a:hover{
@@ -51,3 +70,9 @@ header{
     color: #20484F;
 }
 
+/* Header part end*/
+
+.home{
+    background-color: #493f3f;
+    height: 200px;
+}
