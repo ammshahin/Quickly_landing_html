@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/1b2fad4ddc.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link rel="stylesheet" href="style.css">
     <title>Quickly</title>
 </head>
@@ -13,38 +14,46 @@
 <body>
     <!--Header part start-->
     <header>
-        <div class="logo">
+       <div class="nav">
+        <div class="nav__header">
             <a href="#">Quickly.</a>
+            <button class="nav__toogle" id="navToggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
 
-
-        <nav>
-            <ul class="nav_items">
-                <li>
-                    <a href="#">About us</a>
-                </li>
-                <li>
-                    <a href="#">Products</a>
-                </li>
-                <li>
-                    <a href="#">Features</a>
-                </li>
-                <li>
-                    <a href="#">Our blog</a>
-                </li>
-                <li>
-                    <a href="#">Pricing</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="nav_buttons">
-            <a class="signup_bt" href="#">Sign up</a>
+        <div class="nav__items" id="nav_items">
+            <nav>
+                <ul class="nav__links">
+                    <li>
+                        <a href="#">About us</a>
+                    </li>
+                    <li>
+                        <a href="#">Products</a>
+                    </li>
+                    <li>
+                        <a href="#">Features</a>
+                    </li>
+                    <li>
+                        <a href="#">Our blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Pricing</a>
+                    </li>
+                </ul>
+            </nav>
+           
+        </div>
+        <div class="nav__buttons" id="navButtons">
+            <a class="nav__buttons__signup" href="#">Sign up</a>
             <a href="#">Login</a>
         </div>
+       </div>
+        
     </header>
     <!--Header part end-->
 
-    <section class="hero_section">
+    <!-- <section class="hero_section">
         <div class="grid grid-cols-2 gap-4 py-16 justify-items-center">
             <div class="grid grid-row gap-8 py-32 hero_div">
                 <div class="hero_p1">
@@ -74,15 +83,16 @@
                    
                 </div>
                 <div class="absolute bottom-0 left-0 task-card">
-
+                    
                 </div>
                 
             </div>
 
 
         </div>
-    </section>
+    </section> -->
 
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

@@ -1,22 +1,153 @@
+:root{
+    --color-primary: #20484F;
+    --color-secondary: #B8E4DA;
+}
 @font-face {
     font-family: Plus_Jakarta_Sans;
     src: url(/fonts/PlusJakartaSans-Regular.ttf);
 }
 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body{
     font-family: Plus_Jakarta_Sans;
-    margin: 0;
 }
 
 /* Header part start*/
 
 header{
-    background-color: #20484F;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 30px;
+    background-color: var(--color-primary);
+    margin: auto;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
 }
 
+.nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5px;
+}
+
+.nav__header a{
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+
+}
+
+.nav__toogle {
+    font-size: 32px;
+    color: white;
+    background: transparent;
+    border: transparent;
+    padding-right: 20px;
+}
+
+.nav__links li{
+    list-style: none;
+    margin: 15px 0;
+    border-bottom: 2px solid white;
+    width: 80px;
+}
+
+.nav__links li a{
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav__buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 28px;
+}
+
+.nav__buttons a{
+    font-size: 14px;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-weight: lighter;
+    color: white;
+    
+}
+.nav__buttons__signup{
+    background-color: var(--color-secondary);
+    border-radius: 8px;
+    color: var(--color-primary)!important;
+    height: fit-content;
+}
+
+.nav__items{
+    height: 0;
+    overflow: hidden;
+}
+
+.nav__items__open{
+    height: fit-content;
+    padding-left: 5px;
+}
+.nav__buttons{
+    height: 0;
+    overflow: hidden;
+}
+.nav__buttons__open{
+    overflow: visible;
+    height: 50px;
+}
+
+@media only screen and (min-width: 920px){
+    .nav__toogle{
+        display:none;
+    }
+    .nav{
+        flex-direction: row;
+        justify-content: space-between;
+       
+    }
+    .nav__header{
+        display: block;
+        padding-top: 10px;
+        padding-left: 25px;
+    }
+    .nav__links{
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+        align-items: center;
+    }
+
+    .nav__links li{
+        border-bottom: none;
+    }
+    
+    .nav__items{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .nav__buttons{
+        padding-top: 5px;
+        padding-right: 20px;
+    }
+    
+
+}
+/* 
 .logo a{
     text-decoration: none;
     display: inline-block;
@@ -52,23 +183,7 @@ header{
     color: white;
 } */
 
-.nav_buttons a{
-    font-family: Plus_Jakarta_Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    color: white;
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px 10px;
-    
-}
 
-.nav_buttons a:hover{
-    background: #B8E4DA;
-    border-radius: 8px;
-    color: #20484F;
-}
 
 /* Header part end*/
 
