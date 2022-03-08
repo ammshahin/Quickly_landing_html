@@ -266,7 +266,156 @@ body{
 
 /* Hero Section Mobile  end*/
 
+/* Social Proof start */
+.social__proof__container{
+    background-color: #FAFAFA;
+}
+.social__proof__container p{
+    font-size: 24px;
+    color: var(--color-primary-dark);
+   text-align: center;
+   padding: 4px;
+}
+.social__proof__container p span{
+    font-weight: bold;
+}
+.social__proof__logos{
+    padding: 10px 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    /* flex-direction: column; */
+    align-items: center;
+    gap: 20px;
+}
+/* Social Proof end */
 
+/* Feature start */
+.feature__container{
+    position: relative;
+    background-color: #FAFAFA;
+}
+.feature__info{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px;
+}
+.feature__blocks{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+.feature__txt h3{
+    font-size: 32px;
+    color: var(--color-primary-dark);
+    padding: 20px 0;
+}
+.feature__txt p{
+    font-size: 18px;
+    color: var(--color-primary-dark);
+}
+.feature__block h5{
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--color-primary-dark);
+    padding: 6px 0;
+}
+.feature__block p{
+    font-size: 16px;
+    color: var(--color-primary-dark);
+    padding: 6px 0;
+}
+.feature__block i{
+    font-family: 'Font Awesome 6 Free';
+    color: var(--color-primary-dark);
+    padding: 15px;
+    background: #DCF2ED;
+    border-radius: 12px;
+}
+.feature__image{
+    position: relative;
+}
+.feature__image img{
+    display: block;
+    margin: auto;
+}
+.feature__image__card1{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 26px;
+    padding: 20px;
+    z-index: 1;
+    bottom: 140px;
+    left: 16px;
+    background-color: white;
+    border-radius: 12px;
+
+}
+.feature__image__card2{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 26px;
+    padding: 20px;
+    z-index: 1;
+    top: 32px;
+    right: 2px;
+    background-color: var(--color-primary);
+    border-radius: 12px;
+}
+.card2__heading{
+    color: white;
+}
+.feature__image__card__body{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.feature__image__card1__icon{
+    font-family: 'Font Awesome 6 Free';
+    color: var(--color-primary-dark);
+    background-color: var(--color-secondary);
+    padding: 15px;
+    border-radius: 50px;
+    height: fit-content;
+}
+.feature__image__card2__icon{
+    font-family: 'Font Awesome 6 Free';
+    color: var(--color-primary-dark);
+    background-color: var(--color-secondary);
+    padding: 15px;
+    border-radius: 50px;
+    font-size: 13px;
+    height: fit-content;
+}
+.feature__image__card__dummy1{
+    width: 193px;
+    height: 11px;
+    background: rgba(32, 72, 79, 0.1);
+    border-radius: 12px;
+}
+.feature__image__card__dummy2{
+    width: 150px;
+    height: 11px;
+    background: rgba(32, 72, 79, 0.1);
+    border-radius: 12px;
+}
+.feature__image__card2__dummy1{
+    width: 140px;
+    height: 8px;
+    background: var(--color-secondary);
+    border-radius: 12px;
+}
+.feature__image__card2__dummy2{
+    width: 122px;
+    height: 8px;
+    background: var(--color-secondary);
+    border-radius: 12px;
+}
+
+/* Feature end */
 
 /* For Screen Size greater than Tablets */
 
@@ -319,27 +468,54 @@ body{
     
 
     /* Hero Section Larger Device */
-    .hero__section{
-        padding-top: 57px;
-        
-    }
+
     .hero__container{
-        flex-direction: row;
-        justify-content: space-around;
-        
+        display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    height: 750px;
     }
     .hero__text__btns{
+        padding-left: 180px;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
+        background-position: 369px;
     }
     .hero__image{
-        width: min-content;
-        
-        margin-top: 100px;
+        padding-right: 150px;
+        display: block;
+        padding-top: 148px;
     }
-    .hero__card1__container {
-        top: -524px;
-        left: 216px;
+    .hero__card2__container{
+        top: -222px;
+        left: -365px;
     }
-
+  
      /* Hero Section Larger Device end*/
+
+     /* Social Proof Larger Device start */
+    .social__proof__logos{
+        grid-template-columns: auto auto auto auto;
+        gap: 90px;
+    }
+    .social__proof__container{
+        padding: 100px 0;
+    }
+     /* Social Proof Larger Device end */
+
+
+     /* Feature Larger Device start */
+    .feature__container{
+        padding: 50px 140px;
+        display: flex;
+        flex-direction: row;
+        gap: 400px;
+    }
+    .feature__image__card1{
+        bottom: 100px;
+        left: -14px;
+    }
+     /* Feature Larger Device end */
+
 }
