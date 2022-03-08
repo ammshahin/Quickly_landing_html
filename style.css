@@ -1,6 +1,9 @@
 :root{
     --color-primary: #20484F;
     --color-secondary: #B8E4DA;
+    --color-bg: #FAFAFA;
+    --color-primary-dark: #072125;
+    --font--size--btn: 18px;
 }
 @font-face {
     font-family: Plus_Jakarta_Sans;
@@ -19,12 +22,13 @@ body{
 
 /* Header part start*/
 
-header{
+.header{
     background-color: var(--color-primary);
     margin: auto;
     padding: 10px;
     position: fixed;
     width: 100%;
+    display: block;
 }
 
 .nav{
@@ -109,7 +113,116 @@ header{
     height: 50px;
 }
 
+
+/* Hero Section */
+
+.hero__section{
+    background-color: var(--color-bg);
+    padding-top: 57px;
+}
+.hero__container{
+    display: flex;
+    flex-direction: column;
+}
+.hero__text__btns{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: left;
+    padding: 15px;
+    background-image: url('./img/bg/hero-left-bg.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.hero__text1{
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--color-primary);
+}
+.hero__text2{
+    font-size: 64px;
+    font-weight: bold;
+    color: var(--color-primary-dark);
+}
+.hero__text3{
+    font-size: 24px;
+    color: var(--color-primary-dark);
+}
+.hero__btns{
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+}
+.hero__btns a{
+    font-size: var(--font--size--btn);
+    text-decoration: none;
+    padding: 16px 36px 15px;
+    color: white;
+    background-color: var(--color-primary);
+    border-radius: 8px;
+}
+.hero__btn2{
+    background-color: white!important;
+    color: var(--color-primary-dark)!important;
+}
+.hero__image{
+    padding: 15px;
+    display: block;
+    justify-content: center;
+}
+.hero__img__bg{
+    position: absolute;
+    padding: 20px;
+}
+.hero__img_face{
+    padding: 50px;
+    background-image: url(./img/bg/hero-right-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero__card1__container{
+    top: -518px;
+    left: 208px;
+    border-radius: 12px;
+    display: inline-block;
+    background-color: white;
+    position: relative;
+}
+.hero__card1{
+    display: flex;
+    flex-direction: row;
+    gap: 26px;
+    padding: 15px;
+    
+}
+.hero__card1 img{
+    padding: 4px;
+    border: 3px solid #B8E4DA;
+    border-radius: 50px;
+}
+.hero__card1__text{
+    padding: 10px;
+}
+
+.hero__card1__h4{
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--color-primary-dark);
+}
+.hero__card1__p{
+    font-size: 16px;
+    color: #20484F;
+}
+
+
+
+/* For Screen Size greater than Tablets */
+
 @media only screen and (min-width: 920px){
+    
+    /* Header part */
+
     .nav__toogle{
         display:none;
     }

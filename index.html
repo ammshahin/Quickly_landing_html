@@ -13,84 +13,97 @@
 
 <body>
     <!--Header part start-->
-    <header>
-       <div class="nav">
-        <div class="nav__header">
-            <a href="#">Quickly.</a>
-            <button class="nav__toogle" id="navToggle">
-                <i class="fa-solid fa-bars"></i>
-            </button>
+    <div class="header">
+        <div class="nav">
+            <div class="nav__header">
+                <a href="#">Quickly.</a>
+                <button class="nav__toogle" id="navToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+            <div class="nav__items" id="nav_items">
+                <nav>
+                    <ul class="nav__links">
+                        <li>
+                            <a href="#">About us</a>
+                        </li>
+                        <li>
+                            <a href="#">Products</a>
+                        </li>
+                        <li>
+                            <a href="#">Features</a>
+                        </li>
+                        <li>
+                            <a href="#">Our blog</a>
+                        </li>
+                        <li>
+                            <a href="#">Pricing</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+            <div class="nav__buttons" id="navButtons">
+                <a class="nav__buttons__signup" href="#">Sign up</a>
+                <a href="#">Login</a>
+            </div>
         </div>
 
-        <div class="nav__items" id="nav_items">
-            <nav>
-                <ul class="nav__links">
-                    <li>
-                        <a href="#">About us</a>
-                    </li>
-                    <li>
-                        <a href="#">Products</a>
-                    </li>
-                    <li>
-                        <a href="#">Features</a>
-                    </li>
-                    <li>
-                        <a href="#">Our blog</a>
-                    </li>
-                    <li>
-                        <a href="#">Pricing</a>
-                    </li>
-                </ul>
-            </nav>
-           
-        </div>
-        <div class="nav__buttons" id="navButtons">
-            <a class="nav__buttons__signup" href="#">Sign up</a>
-            <a href="#">Login</a>
-        </div>
-       </div>
-        
-    </header>
+    </div>
     <!--Header part end-->
 
-    <!-- <section class="hero_section">
-        <div class="grid grid-cols-2 gap-4 py-16 justify-items-center">
-            <div class="grid grid-row gap-8 py-32 hero_div">
-                <div class="hero_p1">
+
+    <!-- Hero part -->
+
+    <div class="hero__section">
+        <div class="hero__container">
+            <div class="hero__text__btns">
+                <div class="hero__text1">
                     <p>The new way to work online</p>
                 </div>
-                <div class="hero_p2">
+                <div class="hero__text2">
                     <p>Get the important <br>
                         work done faster</p>
                 </div>
-                <div class="hero_p3">
+                <div class="hero__text3">
                     <p>With Quickly, you can get more productive <br>
                         work done in far less time than ever before.</p>
                 </div>
-                <div class="hero_bt flex space-x-4">
-                    <a href="#" class="hero_bt1">Sign up</a>
-                    <a href="#" class="hero_bt2">Learn more</a>
+                <div class="hero__btns">
+                    <a href="#" class="hero__btn1">Sign up</a>
+                    <a href="#" class="hero__btn2">Learn more</a>
                 </div>
             </div>
 
 
 
-            <div class="container relative flex justify-center p-8 ">
-                <img  src="img/designs/Untitled_Artwork 2 1.png" alt="">
-                <div class="hero_right absolute  flex justify-center">
-                    
-                    <img src="img/BG Image.png" alt="">
-                   
-                </div>
-                <div class="absolute bottom-0 left-0 task-card">
-                    
+
+
+            <div class="hero__image">
+
+                <img class="hero__img_face" src="./img/hero-right.png" alt="">
+                <div class="hero__card1__container">
+                    <div class="hero__card1">
+                        <div class="hero__card1__img">
+                            <img src="./img/designs/hero-card1-avatar.png" alt="">
+                        </div>
+                        <div class="hero__card1__text">
+                            <h4 class="hero__card1__h4">New task assigned</h4>
+                            <p class="hero__card1__p">Louise assigned you a project</p>
+                        </div>
+                    </div>
                 </div>
                 
+
             </div>
+            
+
+
 
 
         </div>
-    </section> -->
+    </div>
 
     <script src="./js/script.js"></script>
 </body>
