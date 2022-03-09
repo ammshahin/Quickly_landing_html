@@ -588,7 +588,97 @@ body{
     padding: 31px;
 }
 
+/* Comments section */
+.comments__container{
+    position: relative;
+    background-color: #FAFAFA;
+}
+.comments__heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px 0;
+}
+.comments__heading__btn{
+    display: inline-block;
+    margin: auto;
+}
+.comments__heading__btn a{
+    font-size: var(--font--size--btn);
+    text-decoration: none;
+    padding: 16px 36px 15px;
+    color: white;
+    background-color: var(--color-primary);
+    border-radius: 8px;
+}
+.comments__cards{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 
+}
+.comments__card{
+    background-color: white;
+    padding: 20px;
+    width: max-content;
+    border-radius: 24px;
+    margin: auto;
+}
+.comments__card__text{
+    font-size: 24px;
+    color: var(--color-primary-dark);
+    padding: 40px 0;
+}
+.comments__card__person{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.comments__card__person h5{
+    font-size: 18px;
+    color: var(--color-primary-dark);
+}
+.comments__card__person p{
+    font-size: 14px;
+    color: var(--color-primary);
+}
+
+/* Trial Section */
+.trial__section__container{
+    padding: 50px 3px;
+    display: flex;
+    flex-direction: column;
+}
+.trial__section__container h5{
+    font-size: 18px;
+    color: var(--color-primary);
+    text-align: center;
+    padding-bottom: 28px;
+}
+.trial__section__container h1{
+    font-size: 50px;
+    color: var(--color-primary-dark);
+    text-align: center;
+    padding-bottom: 54px;
+}
+.trial__section__container a{
+    font-size: var(--font--size--btn);
+    text-decoration: none;
+    padding: 16px 36px 15px;
+    color: white;
+    background-color: var(--color-primary);
+    border-radius: 8px;
+    width: max-content;
+    margin: auto;
+}
+
+
+/* Footer section */
+
+.footer__container{
+    background-color: var(--color-primary-dark);
+}
 
 /* For Screen Size greater than Tablets */
 
@@ -720,4 +810,32 @@ body{
         text-align: left;
         padding-left: 180px;
     }
+
+    /* Comments section Large*/
+
+    .comments__container{
+        padding: 50px 180px;
+        background-image: url('./img/bg/Decoration.png');
+        background-repeat: no-repeat;
+        background-position-x: right;
+    background-position-y: bottom;
+    }
+    .comments__heading{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .feature__txt h3{
+        text-align: left;
+    }
+    .comments__heading__btn {
+        margin-right: 0px;
+    }
+    .comments__cards{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .comments__card{
+        margin: 0px;
+    }
+
 }
