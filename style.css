@@ -349,7 +349,7 @@ body{
     flex-direction: row;
     gap: 26px;
     padding: 20px;
-    z-index: 1;
+    /* z-index: 1; */
     bottom: 140px;
     left: 16px;
     background-color: white;
@@ -362,7 +362,7 @@ body{
     flex-direction: row;
     gap: 26px;
     padding: 20px;
-    z-index: 1;
+    /* z-index: 1; */
     top: 32px;
     right: 2px;
     background-color: var(--color-primary);
@@ -576,7 +576,17 @@ body{
     
 /* feature-secondary-end */
 
-
+/* Feature detail start */
+.feature__detail__container{
+    margin: 100px 0;
+}
+.feature__detail__blocks{
+    display: grid;
+    grid-template-columns: auto auto;
+    /* gap: 20px; */
+    grid-gap: 16px;
+    padding: 31px;
+}
 
 
 
@@ -695,4 +705,19 @@ body{
      .feature__secondary__heading{
          padding-top: 100px;
      }
+
+     /*feature detail */
+     .feature__detail__blocks{
+        grid-template-columns: auto auto auto auto;
+        gap: 124px;
+        padding: 60px 180px;
+    }
+    .feature__detail__heading div h3 {
+        text-align: left;
+        padding-left: 180px;
+    }
+    .feature__detail__heading div p {
+        text-align: left;
+        padding-left: 180px;
+    }
 }
