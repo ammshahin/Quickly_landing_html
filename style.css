@@ -285,7 +285,6 @@ body{
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
-    /* flex-direction: column; */
     align-items: center;
     gap: 20px;
 }
@@ -678,7 +677,63 @@ body{
 
 .footer__container{
     background-color: var(--color-primary-dark);
+    padding: 50px 20px;
+    display: grid;
+    grid-template-columns: auto auto;
 }
+.footer__items{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+}
+.footer__item__address{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.footer__logo{
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.footer__item__address p{
+    font-size: 16px;
+    color: #DCF2ED;
+    font-weight: 400;
+}
+.footer__item{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer__item h5{
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    padding: 5px 0;
+}
+.footer__item a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #DCF2ED;
+    font-weight: 400;
+}
+.footer__copyright{
+    border-top: 1px solid #B8E4DA;
+    background-color: var(--color-primary-dark);
+}
+.footer__copyright p{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: #DCF2ED;
+    padding: 16px 0;
+}
+
+/* Footer end */
+
 
 /* For Screen Size greater than Tablets */
 
@@ -818,7 +873,7 @@ body{
         background-image: url('./img/bg/Decoration.png');
         background-repeat: no-repeat;
         background-position-x: right;
-    background-position-y: bottom;
+        background-position-y: bottom;
     }
     .comments__heading{
         flex-direction: row;
@@ -836,6 +891,23 @@ body{
     }
     .comments__card{
         margin: 0px;
+    }
+
+
+    /* Footer section Large */
+    .footer__container{
+        flex-direction: row;
+        padding: 50px 180px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer__items{
+        display: flex;
+        flex-direction: row;
+        gap: 80px;
+    }
+    .footer__item__address{
+        padding-right: 100px;
     }
 
 }
