@@ -682,8 +682,9 @@ body{
 .footer__container{
     background-color: var(--color-primary-dark);
     padding: 50px 20px;
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 .footer__items{
     display: grid;
