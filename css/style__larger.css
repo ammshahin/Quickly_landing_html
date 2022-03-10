@@ -1,0 +1,221 @@
+/* For Screen Size greater than Tablets */
+
+@media only screen and (min-width: 900px){
+    
+    /* Header part */
+
+    .nav__toogle{
+        display:none;
+    }
+    .nav{
+        flex-direction: row;
+        justify-content: space-between;
+       
+    }
+    .nav__items{
+        height: fit-content;
+        padding-left: 5px;
+    }
+    .nav__buttons{
+        overflow: visible;
+        height: 50px;
+    }
+    .nav__header{
+        display: block;
+        padding-top: 10px;
+        padding-left: 25px;
+    }
+    .nav__links{
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+        align-items: center;
+    }
+
+    .nav__links li{
+        border-bottom: none;
+    }
+    
+    .nav__items{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .nav__buttons{
+        padding-top: 5px;
+        padding-right: 20px;
+    }
+    
+
+    /* Hero Section Larger Device */
+
+    .hero__container{
+        display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    height: 750px;
+    }
+    .hero__text__btns{
+        padding-left: 180px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-position: 369px;
+    }
+    .hero__image{
+        padding-right: 150px;
+        display: block;
+        padding-top: 148px;
+    }
+    .hero__img_face{
+        background-size: auto;
+    }
+    .hero__card1__container{
+        top: -518px;
+        left: 208px;
+    }
+    .hero__card1{
+        gap: 26px;
+        padding: 15px;
+    }
+    .hero__card1 img{
+        border: 3px solid #B8E4DA;
+        width: auto;
+    }
+    .hero__card1__h4{
+        font-size: 24px;
+    }
+    .hero__card1__p{
+        font-size: 16px;
+    }
+    
+    .hero__card2__container{
+        top: -223px;
+        left: -367px;
+    }
+    .hero__card2{
+        gap: 26px;
+        padding: 15px;
+    }
+    .hero__card2__icon{
+        padding: 20px;
+    }
+    .hero__card2__dummy1{
+        width: 273px;
+        height: 11px;
+    }
+    .hero__card2__dummy2{
+        width: 182px;
+        height: 11px;
+    }
+    .hero__card2__dummy3{
+        width: 110px;
+        height: 37px;
+    }
+    
+    .hero__card2__body{
+        gap: 12px;
+    }
+     /* Hero Section Larger Device end*/
+
+     /* Social Proof Larger Device start */
+    .social__proof__logos{
+        grid-template-columns: auto auto auto auto;
+        gap: 90px;
+    }
+    .social__proof__container{
+        padding: 100px 0;
+    }
+     /* Social Proof Larger Device end */
+
+
+     /* Feature Larger Device start */
+    .feature__container{
+        padding: 50px 140px;
+        display: flex;
+        flex-direction: row;
+        gap: 400px;
+    }
+    .feature__image__card1{
+        padding: 20px;
+        bottom: 140px;
+    }
+     /* Feature Larger Device end */
+
+
+     /*Feature secondary large */
+
+     .feature__secondary__bodies{
+        flex-direction: row;
+        margin: 50px 200px;
+        justify-content: center;
+        gap: 100px;
+        background-repeat: no-repeat;
+        background-image: url(./img/bg/Connector-Vector.png);
+        background-position: 287px 95px;
+     }
+     .feature__secondary__heading{
+         padding-top: 100px;
+     }
+
+     /*feature detail */
+     .feature__detail__blocks{
+        grid-template-columns: auto auto auto auto;
+        gap: 124px;
+        padding: 60px 180px;
+    }
+    .feature__detail__heading div h3 {
+        text-align: left;
+        padding-left: 180px;
+    }
+    .feature__detail__heading div p {
+        text-align: left;
+        padding-left: 180px;
+    }
+
+    /* Comments section Large*/
+
+    .comments__container{
+        padding: 50px 180px;
+        background-image: url('./img/bg/Decoration.png');
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: bottom;
+    }
+    .comments__heading{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .feature__txt h3{
+        text-align: left;
+    }
+    .comments__heading__btn {
+        margin-right: 0px;
+    }
+    .comments__cards{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .comments__card{
+        margin: 0px;
+    }
+
+
+    /* Footer section Large */
+    .footer__container{
+        flex-direction: row;
+        padding: 50px 180px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer__items{
+        display: flex;
+        flex-direction: row;
+        gap: 80px;
+    }
+    .footer__item__address{
+        padding-right: 100px;
+    }
+
+}
