@@ -158,9 +158,14 @@
      .feature__secondary__heading{
          padding-top: 100px;
      }
+     .feature__secondary__body2__card__container{
+        left: 5px;
+        top: 3px;
+     }
+    
      .feature__secondary__body3__card__container{
-        left: 6px;
-    top: 0px;
+        left: 49px;
+        top: 42px;
      }
      
      /*feature detail */
