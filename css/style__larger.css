@@ -152,13 +152,17 @@
         justify-content: center;
         gap: 100px;
         background-repeat: no-repeat;
-        background-image: url(./img/bg/Connector-Vector.png);
+        background-image: url(../img/bg/Connector-Vector.png);
         background-position: 287px 95px;
      }
      .feature__secondary__heading{
          padding-top: 100px;
      }
-
+     .feature__secondary__body3__card__container{
+        left: 6px;
+    top: 0px;
+     }
+     
      /*feature detail */
      .feature__detail__blocks{
         grid-template-columns: auto auto auto auto;
@@ -178,7 +182,7 @@
 
     .comments__container{
         padding: 50px 180px;
-        background-image: url('./img/bg/Decoration.png');
+        background-image: url('../img/bg/Decoration.png');
         background-repeat: no-repeat;
         background-position-x: right;
         background-position-y: bottom;
